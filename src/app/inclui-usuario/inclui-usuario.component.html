@@ -1,0 +1,9 @@
+<form (ngSubmit)="salvar()" id="form">
+  <input id="nomeUsuario" name="nomeUsuario" type="text" [(ngModel)]="nomeUsuario" #name="ngModel"  placeholder="insira o nome"/>
+  <input id="cpfUsuario" name="cpfUsuario" type="text" [(ngModel)]="cpfUsuario" #name="ngModel" placeholder="insira o cpf"/>
+  <input id="rgUsuario" name="rgUsuario" type="text" [(ngModel)]="rgUsuario" #name="ngModel" placeholder="insira o rg"/>
+  <button type= "submit">
+    Salvar
+  </button>
+</form>
+

@@ -1,0 +1,24 @@
+<div class="content">
+  <button (click)="carregarLista()">Atualizar</button>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>NOME</th>
+        <th>CPF</th>
+        <th>RG</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of listaUsuario">
+        <td>{{usuario.idUsuario}}</td>
+        <td>{{usuario.nomeUsuario}}</td>
+        <td>{{usuario.cpfUsuario}}</td>
+        <td>{{usuario.rgUsuario}}</td>
+        <td><a (click)="(usuario)">X</a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
